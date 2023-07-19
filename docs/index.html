@@ -16,9 +16,12 @@
 <body>
   <div id="app"></div>
   <script>
+    // let versions = [
+    //   { folder: 'https://raw.githubusercontent.com/keiyin-wong/docsify-version-plugin-doc-example/main/docs/v2.0', label: 'v2.x', default: false },
+    //   { folder: 'https://raw.githubusercontent.com/keiyin-wong/docsify-version-plugin-doc-example/main/docs/v1.0', label: 'v1.x', default: true }
+    // ];
     let versions = [
-      { folder: 'https://raw.githubusercontent.com/keiyin-wong/docsify-version-plugin-doc-example/main/docs/v2.0', label: 'v2.x', default: false },
-      { folder: 'https://raw.githubusercontent.com/keiyin-wong/docsify-version-plugin-doc-example/main/docs/v1.0', label: 'v1.x', default: true }
+      { folder: '', label: 'v1.x', default: true }
     ];
     let basePath = sessionStorage.getItem("basePath");
     if (basePath == null) {
