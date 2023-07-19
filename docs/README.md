@@ -1,3 +1,3 @@
 # Versioned Plugin
 
-This is version 2 plugin. 
+This is version 3 plugin. 
