@@ -16,12 +16,16 @@
 <body>
   <div id="app"></div>
   <script>
+    let prefixUrl = "https://raw.githubusercontent.com/keiyin-wong/docsify-version-plugin-doc-github-tag"
     // let versions = [
     //   { folder: 'https://raw.githubusercontent.com/keiyin-wong/docsify-version-plugin-doc-example/main/docs/v2.0', label: 'v2.x', default: false },
     //   { folder: 'https://raw.githubusercontent.com/keiyin-wong/docsify-version-plugin-doc-example/main/docs/v1.0', label: 'v1.x', default: true }
     // ];
     let versions = [
-      { folder: '', label: 'v1.x', default: true }
+      { folder: '', label: 'latest doc', default: true },
+      { folder: `${prefixUrl}/v3.0.0/docs/`, label: 'v3.0.0', default: false },
+      { folder: `${prefixUrl}/v2.0.0/docs/`, label: 'v2.0.0', default: false },
+      { folder: `${prefixUrl}/v1.0.0/docs/`, label: 'v1.0.0', default: false }
     ];
     let basePath = sessionStorage.getItem("basePath");
     if (basePath == null) {
